@@ -1,0 +1,241 @@
+
+/* fix the side scroll*/
+html{
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+
+/*setting background colour of entire webiste
+to an off-white and pure white can be quite harsh to
+look at for a long time*/
+body{
+  background-color: #fbf7f5
+}
+
+
+header{
+  margin: 0 0 0 0;
+  padding: 300px 0 0 0;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Handlee', cursive;
+}
+
+h1{
+  font-size: 30px;
+  text-align: right;
+  font-family: 'Heebo', sans-serif;
+  background-color: #fbf7f5;
+  color: #f88379;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  background-color: #f88379;
+  color: 	#fbf7f5;
+}
+
+h3{
+  padding: 200px 0 0 0;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  background-color: 	#fbf7f5;
+  color: #f88379;
+}
+
+h4{
+  margin: 0 0 0 0;
+  padding: 300px 0 0 300px;
+  font-size: 30px;
+  text-align: left;
+  font-family: 'Handlee', cursive;
+  background-color: none;
+  color: Black;
+}
+
+h5{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 30px;
+  font-family: 'Handlee', cursive;
+  background-color: none;
+  color: Black;
+
+}
+
+h6{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Handlee', cursive;
+  background-color: none;
+  color: 	#fbf7f5;
+}
+
+p{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Handlee', cursive;
+  background-color: none;
+  color: black;
+}
+
+top-section{
+  padding-bottom: 300px;
+}
+
+nav{
+  font-size: 20px;
+  font-family: 'Heebo', sans-serif;
+}
+
+.navbar-brand{
+  background-color: none;
+  color: #f88379;
+}
+
+.navbar{
+  background-color: #fbf7f5 ;
+}
+
+.nav-link{
+  background-color: #fbf7f5;
+  color: #f88379;
+}
+
+.nav-link:hover{
+  background-color: #f88379;
+  color: #fbf7f5;
+}
+
+.backgroundWhite {
+  background-color: none;
+  height: 100px;
+}
+
+.likes{
+  font-size: 20px;
+}
+
+i.fa-heart{
+  color: #f88379;
+}
+
+footer{
+  background-color: grey;
+  color: #fbf7f5;
+}
+
+.instaCaption{
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Handlee', cursive;
+  background-color: none;
+  color: black;
+}
+
+.video{
+  padding: 0 0 0 30px;
+}
+
+
+/* Media queries determine the side of font and padding
+depending on the size of the screen- reponsive design*/
+/*This is for extra small phone screens 320px and bigger*/
+@media (min-width: 320px) {
+  h1, h2{
+    font-size: 50px;
+  }
+
+  h1{
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+  header{
+    margin: 0 0 0 0;
+    padding: 100px 0 0 0;
+  }
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+/*Small devices landscape phones, 576px and bigger*/
+@media (min-width: 576px) {
+  h1,h2{
+    font-size: 75px;
+  }
+  h1{
+    padding-top: 100px;
+  }
+}
+
+/*Medium devices tablets/laptops, 768px and bigger*/
+@media (min-width: 768px) {
+  h1,h2{
+    font-size:100px;
+  }
+  h1{
+    padding-top: 100px;
+  }
+  .card-columns {
+    column-count: 3;
+  }
+}
+
+/* big devices latops, 992px and bigger*/
+@media (min-width: 992px) {
+  h1,h2{
+    font-size:150px;
+  }
+  h1{
+    padding-top: 130px;
+  }
+}
+
+/*large devices desktops, 1200px and bigger*/
+@media (min-width: 1200px) {
+  h1,h2{
+
+    font-size:200px;
+  }
+
+  h1{
+    padding-top: 200px;
+  }
+  .card-columns {
+    column-count: 4;
+  }
+}
+
+/* Extra large devices large desktops, 1200px and up)*/
+@media (min-width: 1500px) {
+  h1,h2{
+
+    font-size:200px;
+  }
+
+  h1{
+    padding-top: 270px;
+  }
+}
+
+/* Extra extra large devices large desktops, 2000px and up*/
+@media (min-width: 2000px) {
+  h1,h2{
+
+    font-size:200px;
+  }
+
+  h1{
+    padding-top: 550px;
+  }
+}
