@@ -1,3 +1,5 @@
+/*Styles sheet*/
+
 
 /* fix the side scroll*/
 html{
@@ -13,7 +15,8 @@ body{
   background-color: #fbf7f5
 }
 
-
+/*removing any preset margins or padding
+and setting styles for each section of text*/
 header{
   margin: 0 0 0 0;
   padding: 300px 0 0 0;
@@ -22,10 +25,14 @@ header{
   font-family: 'Handlee', cursive;
 }
 
+/*different styles and formats for the
+different headers*/
 h1{
   font-size: 30px;
   text-align: right;
   font-family: 'Heebo', sans-serif;
+  /*background colour must be set before setting
+  the text colour*/
   background-color: #fbf7f5;
   color: #f88379;
 }
@@ -88,15 +95,18 @@ p{
   color: black;
 }
 
+/*adding styles to sections called from parts of code*/
 top-section{
   padding-bottom: 300px;
 }
 
+/*setting the text for the navbar*/
 nav{
   font-size: 20px;
   font-family: 'Heebo', sans-serif;
 }
 
+/*setting colors for navbar*/
 .navbar-brand{
   background-color: none;
   color: #f88379;
@@ -106,34 +116,46 @@ nav{
   background-color: #fbf7f5 ;
 }
 
+/*setting the colours of the links in the navbar*/
 .nav-link{
   background-color: #fbf7f5;
   color: #f88379;
 }
 
+/*the navbar links colour changes if hovered over
+this helps show its a link and can be pressed on*/
 .nav-link:hover{
   background-color: #f88379;
   color: #fbf7f5;
 }
 
+/*can be call in the main html code to set a background colour
+to white (nothing)*/
 .backgroundWhite {
   background-color: none;
   height: 100px;
 }
 
+/*styles for instagram feed*/
 .likes{
   font-size: 20px;
 }
 
+/*controls the color of the hearts
+made to be the same colours and the website to
+match the theme*/
 i.fa-heart{
   color: #f88379;
 }
 
+/*footer set to grey and off white text*/
 footer{
   background-color: grey;
   color: #fbf7f5;
 }
 
+/*font styles of the instgram captions
+under the images*/
 .instaCaption{
   font-size: 20px;
   text-align: left;
@@ -142,12 +164,13 @@ footer{
   color: black;
 }
 
+/*styles appiled to video*/
 .video{
   padding: 0 0 0 30px;
 }
 
 
-/* Media queries determine the side of font and padding
+/* Media queries determine the side and styles of font and padding
 depending on the size of the screen- reponsive design*/
 /*This is for extra small phone screens 320px and bigger*/
 @media (min-width: 320px) {
@@ -205,7 +228,7 @@ depending on the size of the screen- reponsive design*/
 @media (min-width: 1200px) {
   h1,h2{
 
-    font-size:200px;
+    font-size:150px;
   }
 
   h1{
@@ -220,7 +243,7 @@ depending on the size of the screen- reponsive design*/
 @media (min-width: 1500px) {
   h1,h2{
 
-    font-size:200px;
+    font-size:150px;
   }
 
   h1{
@@ -232,7 +255,7 @@ depending on the size of the screen- reponsive design*/
 @media (min-width: 2000px) {
   h1,h2{
 
-    font-size:200px;
+    font-size:150px;
   }
 
   h1{

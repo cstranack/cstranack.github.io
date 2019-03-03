@@ -1,4 +1,4 @@
-
+<!--portfolio home page-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,8 +7,8 @@
   <!--Setting up the file, creating links with libaries used in the program-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--Adding a title to the portfolio tab-->
   <title>Claire Stranack</title>
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Handlee|Heebo:900" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -16,16 +16,23 @@
   <link href="styles/styles.css" rel="stylesheet"/>
 </head>
 
+<!--Createing the navbar at the top of the page-->
 <body id="pagetop" >
   <header>
+    <!--the navbar stuck to the tops of the page even when you scroll-->
     <nav class="navbar fixed-top navbar-expand-lg">
+      <!--if you press the 'portfoilo' in the to top left of the navbar it takes
+    you to the top of the page-->
       <a class="navbar-brand" href="#pagetop">My Portfolio</a>
+      <!--The navbar collapses down to a button when the screen is small-->
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-dark text-white rounded" data-toggle="collapse" data-target="#mobileMenu">
         <i class="fas fa-bars"></i>
       </button>
+      <!--arranging the menu options in the collapsed menu -->
       <div class="col-md-6 col-lg-5 ml-auto d-flex align-nav-items-center mt-4 mt-md-0">
         <div class="collapse navbar-collapse" id="mobileMenu">
           <ul class="navbar-nav ml-auto">
+            <!--The 3 links in the menu-->
             <a class="nav-link" href="indexProjects.html">Projects</a>
           </li>
           <li class="nav-item">
@@ -39,45 +46,53 @@
     </div>
   </nav>
 </header>
-
+<!--the title, my name and image-->
 <section class="top-section">
+  <!--using colums to make the page responsive-->
   <div class="row">
     <div class="animated fadeInLeft col-lg-6 col-md-6 col-sm-6 col-6"><h1>Claire</h1></div>
     <div class="animated fadeInRight col-lg-6 col-md-6 col-sm-6 col-6">
+      <!--width=60% so the image response to the size of the page-->
       <img src="assets/img/headshot3.jpg" alt="me" style="width:60%">
     </div>
     <div class="col-12">
       <h2>Stranack</h2>
+      <!--spacer to spread content out-->
       <div class="wsite-spacer" style="height:200px;"></div>
     </div>
   </div>
 </section>
-
+<!--adding a parallax scroll-->
 <div id="banner-wrap">
   <div class="wsite-elements wsite-not-footer wsite-header-elements">
     <div class="wsite-section-wrap">
+      <!--retrieving and editing the style of the image-->
       <div class="wsite-section wsite-header-section wsite-section-bg-image wsite-section-effect-parallax" style="height: 700px;vertical-align: middle;background-image: url(https://hdqwalls.com/download/low-poly-planet-wide-7680x4320.jpg) ;background-repeat: no-repeat ;background-position: 50% 50% ;background-size: 100% ;background-color: transparent ;background-size: cover;background-attachment: fixed;">
         <div class="wsite-section-content">
           <div class="banner">
             <div class="container">
+              <!--text to top on the scroll-->
               <h6 style="padding-top:300px">a first year internet design student at the University of Plymouth!</h6>
+              <!--spacer so other content doesnt overlap the parallax-->
               <div class="wsite-section-elements">
                 <div class="wsite-spacer" style="height:700px;"></div>
               </div>
             </div>
           </div>
         </div>
-        <div class=""></div>
       </div>
     </div>
   </div>
 </div>
 
+<!--the menu section of the projects page-->
+<!--used a container to control the content-->
 <section class="container">
   <div class="animated fadeInUp">
     <h3>Completed and Ongoing  Projects</h3>
     <hr class="mb-5">
     <div class="padding-top:20px">
+      <!--links to other pages-->
       <li class="nav-item" style="list-style: none;">
         <a class="nav-link" href="UniversityProjects.html"><p>University projects</p></a>
       </li>
@@ -90,9 +105,10 @@
     </div>
   </div>
 </section>
-
+<!--the footer-->
 <footer class="text-center mt-5 pt-5 pb-5">
   <div class="container">
+    <!--columns to organise the content on the footer-->
     <div class="row">
       <div class="col-md-4 mb-4 mg-lg-0">
         <h6 class="text-uppercase mb-4">Address</h6>
@@ -104,16 +120,20 @@
           <h6 class="text-uppercase mb-4">Social Media</h6>
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
+              <!--icons have links to relevant social media page -->
+              <!--link to my tumblr blog-->
               <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="https://www.tumblr.com/blog/cstranack">
                 <i class="fab fa-tumblr"></i>
               </a>
             </li>
             <li class="list-inline-item">
+              <!--link to my art instagram feed-->
               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/clairestranart/">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
             <li class="list-inline-item">
+              <!--link to my twitter feed-->
               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/clairelstranack">
                 <i class="fab fa-twitter"></i>
               </a>
@@ -128,7 +148,7 @@
     </div>
   </footer>
 
-
+  <!--javascript links to these extensions-->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>

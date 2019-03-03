@@ -1,11 +1,13 @@
-
+<!--University projects page-->
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
+    <!--Setting up the file, creating links with libaries used in the program-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Adding a title to the portfolio tab-->
   <title>Claire Stranack</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,20 +15,26 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link href="styles/styles.css" rel="stylesheet"/>
-  <!--<link rel="stylesheet" type="text/css" href="csshake.min.css">-->
 </head>
 
+<!--Createing the navbar at the top of the page-->
 <body id="pagetop">
   <header>
+    <!--the navbar stuck to the tops of the page even when you scroll-->
     <nav class="navbar fixed-top navbar-expand-lg">
+      <!--if you press the 'portfoilo' in the to top left of the navbar it takes
+    you to the top of the page-->
       <a class="navbar-brand" href="#pagetop">My Portfolio</a>
+      <!--The navbar collapses down to a button when the screen is small-->
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-dark text-white rounded" data-toggle="collapse" data-target="#mobileMenu">
         <i class="fas fa-bars"></i>
       </button>
+        <!--arranging the menu options in the collapsed menu -->
       <div class="col-md-6 col-lg-5 ml-auto d-flex align-nav-items-center mt-4 mt-md-0">
         <div class="collapse navbar-collapse" id="mobileMenu">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+                <!--The 3 links in the menu-->
               <a class="nav-link" href="indexProjects.html">Projects</a>
             </li>
             <li class="nav-item">
@@ -41,6 +49,8 @@
     </nav>
   </header>
   <section>
+    <!--title uses columns so its reponsive
+  title is always full screen so col-12 for every screen size-->
     <div class="row">
       <div class="col-12 ">
         <h2>University Projects</h2>
@@ -48,16 +58,20 @@
     </div>
   </section>
 
-
+<!--animations added-->
   <div class="animated fadeInUp">
     <h3>Completed Projects</h3>
     <hr class="mb-5">
 
     <section>
+      <!--subtitles organises the page into sections-->
       <div class="pl-2 pr-2">
         <h5 class="text-center mt-5 mb-2"><b>Internet Design Strategies</b></h5>
+        <!--dividers also help section of the page-->
         <hr class="mb-5">
         <div class="row">
+          <!--cards are easy to manipulate to be responsive and create
+        a common width for all the images-->
           <div class="col-sm-6 col-lg-3 mb-2 mb-lg-0">
             <div class="card w-100">
               <img class="card-img-top" src="assets/img/Uniproject1.jpg">
@@ -79,6 +93,8 @@
             </div>
           </div>
         </div>
+        <!--text under the images, matches other pages, so that the theme is continued across the whole
+      portfolio-->
         <h5 style="text-align:center" class="pt-3">This project focused on creating a creative visulisation of a telecomunications system,<br>
           we created a firewall represetinn how data fliters data, and how hacking can intrude our systems</h5>
         </div>
@@ -89,6 +105,8 @@
 
 
       <section>
+        <!--cards are easy to manipulate to be responsive and create
+      a common width for all the images-->
         <div class="pl-2 pr-2">
           <h5 class="text-center mt-5 mb-2"><b>Creative Coding</b></h5>
           <hr class="mb-5">
@@ -119,6 +137,8 @@
           </div>
         </section>
 
+        <!--use sections to organise the page, these sections can be called to edit the
+      styles of the content they hold-->
         <section>
           <div class="pl-2 pr-2">
             <h5 class="text-center mt-5 mb-2"><b>Type and Image</b></h5>
@@ -152,8 +172,11 @@
           </section>
         </div>
 
+
+<!--the footer-->
 <footer class="text-center mt-5 pt-5 pb-5">
 <div class="container">
+  <!--columns to organise the content on the footer-->
   <div class="row">
     <div class="col-md-4 mb-4 mg-lg-0">
       <h6 class="text-uppercase mb-4">Address</h6>
@@ -165,16 +188,20 @@
         <h6 class="text-uppercase mb-4">Social Media</h6>
         <ul class="list-inline mb-0">
           <li class="list-inline-item">
+            <!--icons have links to relevant social media page -->
+            <!--link to my tumblr blog-->
             <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="https://www.tumblr.com/blog/cstranack">
               <i class="fab fa-tumblr"></i>
             </a>
           </li>
           <li class="list-inline-item">
+            <!--link to my art instagram feed-->
             <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/clairestranart/">
               <i class="fab fa-instagram"></i>
             </a>
           </li>
           <li class="list-inline-item">
+            <!--link to my twitter feed-->
             <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/clairelstranack">
               <i class="fab fa-twitter"></i>
             </a>
@@ -189,7 +216,7 @@
   </div>
 </footer>
 
-
+  <!--javascript links to these extensions-->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>

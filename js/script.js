@@ -1,56 +1,29 @@
-window.onload = function() {
-  currentYear();
-};
-
-function currentYear(){
-  const date = new Date();
-  const autoDate = document.querySelector('#autoDate');
-  autoDate.textContent = date.getFullYear();
-};
-
-/*//navbrand - uni logo
-const navBrand = document.querySelector('.navbar-brand');
-navBrand.addEventListener('mouseenter', addBounce);
-//eventlistener - waits for an event such as mouse enter
-navBrand.addEventListener('animationend', removeBounce);
-//^removes animation after it has played one time*/
-
-const navLinks = document.querySelectorAll('.nav-link');
-//put into arrays
-//navLinks.forEach(navLink => navLink.addEventListener('mouseenter', addBounce));
-//navLinks.forEach(navLink => navLink.addEventListener('animationend', removeBounce));
-//this creates a bounce for each component of the menu bar when you hover over one
-
-function addBounce(e){
-  this.classList.add('animated', 'bounce');
-}
-
-function removeBounce(e){
-  this.classList.remove('animated', 'bounce');
-}
+/*Javascript page*/
 
 
-
-
-
-
+/*This code import the instagram feed*/
 var feed = new Instafeed({
   get: 'user',
+  /*user id and accesstoken were retrieved so access would be granted to used
+  the feed in my porject*/
   userId: '4021027637',
+  /*set the resolution to standard to they dont look blurry*/
   resolution: 'standard_resolution',
   accessToken: '4021027637.3df9e66.49f1074a36f04d43a9f901f50892c3bc',
   filter: function(image) {
     var MAX_LENGTH = 40;
 
-    // here we create a property called "short_caption"
-    // on the image object, using the original caption
+    /* creates property called "short_caption" on the image object,
+    using the original caption, we can then determine how long we want
+     the captions to be, MAX_LENGTH is set to 40 so captions cannot be longer
+     than that, ive decided I want 5 characters showing at the moment */
     if (image.caption && image.caption.text) {
-      image.short_caption = image.caption.text.slice(0,0, MAX_LENGTH);
+      image.short_caption = image.caption.text.slice(0,5, MAX_LENGTH);
     } else {
       image.short_caption = "";
     }
 
-    // ensure the filter doesn't reject any images
+    /*ensure the filter doesn't reject any images*/
     return true;
   },
   template: '<div class="col-3"><img class="w-100" src={{image}}><hr><p class="likes"><i class="fas fa-heart"></i>{{likes}}</i><br><p class="instaCaption">{{model.short_caption}}...<a href="{{link}}" target="_blank">More</a></p></div>'

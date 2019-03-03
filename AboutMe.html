@@ -1,11 +1,13 @@
-
+<!--About me page-->
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
+    <!--Setting up the file, creating links with libaries used in the program-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Adding a title to the portfolio tab-->
   <title>Claire Stranack</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,16 +18,23 @@
   <!--<link rel="stylesheet" type="text/css" href="csshake.min.css">-->
 </head>
 
+<!--Createing the navbar at the top of the page-->
 <body id="pagetop">
   <header>
+    <!--the navbar stuck to the tops of the page even when you scroll-->
     <nav class="navbar fixed-top navbar-expand-lg">
+      <!--if you press the 'portfoilo' in the to top left of the navbar it takes
+    you to the top of the page-->
       <a class="navbar-brand" href="#pagetop">My Portfolio</a>
+      <!--The navbar collapses down to a button when the screen is small-->
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-dark text-white rounded" data-toggle="collapse" data-target="#mobileMenu">
         <i class="fas fa-bars"></i>
       </button>
+        <!--arranging the menu options in the collapsed menu -->
       <div class="col-md-6 col-lg-5 ml-auto d-flex align-nav-items-center mt-4 mt-md-0">
         <div class="collapse navbar-collapse" id="mobileMenu">
           <ul class="navbar-nav ml-auto">
+              <!--The 3 links in the menu-->
             <li class="nav-item">
               <a class="nav-link" href="indexProjects.html">Projects</a>
             </li>
@@ -40,9 +49,10 @@
       </div>
     </nav>
   </header>
+  <!--Title and text arranged with columns to make the responisve-->
   <h2>Who am I?</h2>
   <div class="row">
-
+    <!--fade in animations add a clean and professional feel to the portfolio-->
     <div class="animated fadeInLeft text-center mt-5 pl-5 pr-5 col-0 col-lg-8 col-md-8 col-sm-12 col-xs-12">
       <p>Hi I'm Claire ....<br>....I'm 18 years old and currently studying my first year of Internet design at the university of plymouth.
         I recently completed my A level which where Computer science, 3D design and History at Croydon high
@@ -50,18 +60,22 @@
         I love drawing/painting, travelling, flamingos and my dog.</p>
       </div>
 
-
+      <!--image imported from my image file, fades in the opposite direction to the text-->
       <div class="animated fadeInRight  mt-5  pl-5 col-0 col-lg-4 col-md-4 col-sm-3 col-xs-2 ml-auto mr-0px">
+        <!--image scales to size of screen-->
         <img src="assets/img/headshot3.jpg" alt="me" style="width:60%">
       </div>
     </div>
 
-
+    <!--section of images-->
     <h3 class="mb-5">Travel</h3>
 
-
+    <!--use cards to orgnaise images into the same format, this looks neat and orgnaised-->
+    <!--the cards are also reponsive and the number of columns depends on size of screen-->
     <div class="card-columns pl-2">
       <div class="card">
+        <!--only and image in each card-->
+        <!--alt text appears if the image can not be sourced-->
         <img class="card-img-top" src="assets/img/Dog4.jpg" alt="Card image cap">
       </div>
       <div class="card">
@@ -115,25 +129,26 @@
       <div class="card">
         <img class="card-img-top" src="assets/img/Dog2.jpg" alt="Card image cap">
       </div>
-
     </div>
 
 
 
 
-
+    <!--my insta feed link-->
     <div class="my-container">
       <div class="container pt-5">
         <h3>Follow my insta feed!<br>
           @clairestranart</h3>
           <hr class="mb-5">
+          <!--link to javascript which calls the feed-->
           <div id="instafeed" class="row"></div>
         </div>
       </div>
 
-
+<!--the footer-->
       <footer class="text-center mt-5 pt-5 pb-5">
         <div class="container">
+          <!--columns to organise the content on the footer-->
           <div class="row">
             <div class="col-md-4 mb-4 mg-lg-0">
               <h6 class="text-uppercase mb-4">Address</h6>
@@ -145,16 +160,20 @@
                 <h6 class="text-uppercase mb-4">Social Media</h6>
                 <ul class="list-inline mb-0">
                   <li class="list-inline-item">
+                    <!--icons have links to relevant social media page -->
+                    <!--link to my tumblr blog-->
                     <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="https://www.tumblr.com/blog/cstranack">
                       <i class="fab fa-tumblr"></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
+                    <!--link to my art instagram feed-->
                     <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/clairestranart/">
                       <i class="fab fa-instagram"></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
+                    <!--link to my twitter feed-->
                     <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/clairelstranack">
                       <i class="fab fa-twitter"></i>
                     </a>
@@ -169,7 +188,7 @@
           </div>
         </footer>
 
-
+          <!--javascript links to these extensions-->
         <script type="text/javascript" src="js/instafeed.min.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
